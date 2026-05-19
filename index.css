@@ -2268,7 +2268,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 0;
   position: relative;
   flex-grow: 1;
 }
@@ -2277,6 +2277,7 @@ a {
   position: relative;
   display: inline-flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .org-node .node-badge {
@@ -2296,24 +2297,51 @@ a {
   padding: 0.9rem 2.5rem;
 }
 
-.org-middle-row {
-  display: flex;
-  gap: 4rem;
-  position: relative;
-  width: 100%;
-  justify-content: center;
+/* CONNECTORS AND TREE LINES */
+.connector-vertical {
+  width: 2px;
+  background-color: var(--primary);
+  opacity: 0.45;
+  z-index: 1;
 }
 
-.org-middle-row::before {
-  content: '';
+.connector-vertical.v-1 {
+  height: 30px;
+}
+
+.connector-vertical.v-2 {
+  height: 25px;
+}
+
+.org-row-middle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  z-index: 2;
+}
+
+.node-hq {
+  /* centered */
+}
+
+.node-lab {
   position: absolute;
-  top: -1.25rem;
+  right: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.connector-lab-branch {
+  position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 1.25rem;
-  background: var(--primary);
-  opacity: 0.3;
+  right: calc(6% + 60px); /* connects center vertical line to lab badge */
+  height: 2px;
+  background-color: var(--primary);
+  opacity: 0.45;
+  z-index: 1;
 }
 
 .node-hq .node-badge, .node-lab .node-badge {
@@ -2322,6 +2350,39 @@ a {
   border-color: var(--primary);
   border-width: 1.5px;
   min-width: 120px;
+}
+
+.connector-horizontal-bar {
+  width: 50%;
+  height: 2px;
+  background-color: var(--primary);
+  opacity: 0.45;
+  z-index: 1;
+}
+
+.connector-drops-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 20px;
+  z-index: 1;
+}
+
+.connector-drop {
+  position: relative;
+  height: 100%;
+}
+
+.connector-drop::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary);
+  opacity: 0.45;
+  transform: translateX(-50%);
 }
 
 .org-bottom-grid {
@@ -2464,11 +2525,33 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .connector-vertical,
+  .connector-lab-branch,
+  .connector-horizontal-bar,
+  .connector-drops-row {
+    display: none !important;
+  }
+  
+  .org-tree {
+    gap: 1.5rem;
+  }
+  
+  .org-row-middle {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .node-lab {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+  }
+  
   .org-bottom-grid {
     grid-template-columns: 1fr;
-  }
-  .org-middle-row {
-    gap: 2rem;
+    gap: 1.25rem;
   }
 }

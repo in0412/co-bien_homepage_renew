@@ -546,14 +546,33 @@
               <span class="node-badge">대표</span>
             </div>
 
+            <!-- CEO에서 사업부로 내려가는 수직선 -->
+            <div class="connector-vertical v-1"></div>
+
             <!-- 중간 라인 (기술연구소 & 사업부) -->
-            <div class="org-middle-row">
+            <div class="org-row-middle">
               <div class="org-node node-hq">
                 <span class="node-badge">사업부</span>
               </div>
+              
+              <!-- 수직선에서 기술연구소로 연결되는 수평선 -->
+              <div class="connector-lab-branch"></div>
+              
               <div class="org-node node-lab">
                 <span class="node-badge">기술연구소</span>
               </div>
+            </div>
+
+            <!-- 사업부에서 아래 4대 부서로 내려가는 수직선 -->
+            <div class="connector-vertical v-2"></div>
+
+            <!-- 4대 부서들을 연결하는 수평 탑 바 -->
+            <div class="connector-horizontal-bar"></div>
+
+            <!-- 각 부서 카드로 떨어지는 2개의 수직 드롭 선 -->
+            <div class="connector-drops-row">
+              <div class="connector-drop"></div>
+              <div class="connector-drop"></div>
             </div>
 
             <!-- 하위 4대 부서 (Bottom Grid) -->
