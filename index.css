@@ -2315,33 +2315,40 @@ a {
 
 .org-row-middle {
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
   width: 100%;
   margin: 0;
   z-index: 2;
 }
 
-.node-hq {
-  /* centered */
+.org-middle-placeholder {
+  width: 100%;
 }
 
-.node-lab {
-  position: absolute;
-  right: 6%;
-  top: 50%;
-  transform: translateY(-50%);
+.node-hq {
+  /* Centered */
+}
+
+.node-lab-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .connector-lab-branch {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  right: calc(6% + 60px); /* connects center vertical line to lab badge */
+  flex-grow: 1;
   height: 2px;
   background-color: var(--primary);
   opacity: 0.45;
   z-index: 1;
+}
+
+.node-lab {
+  flex-shrink: 0;
 }
 
 .node-hq .node-badge, .node-lab .node-badge {
