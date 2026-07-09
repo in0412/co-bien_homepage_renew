@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>코비엔 프로젝트 프롬프트 히스토리</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body {
+      background-color: var(--bg-light);
+      padding: 4rem 2vw;
+    }
+    .history-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--bg-white);
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      padding: 3rem;
+      border: 1px solid var(--border-color);
+    }
+    .history-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+    .history-header h1 {
+      font-size: 2.2rem;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+    }
+    .prompt-item {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .prompt-number {
+      flex: 0 0 45px;
+      height: 45px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 10px rgba(0,84,166,0.3);
+      z-index: 2;
+    }
+    .prompt-content {
+      flex: 1;
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      position: relative;
+    }
+    .prompt-content::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 14px;
+      width: 16px;
+      height: 16px;
+      background: #f8f9fa;
+      border-left: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      transform: rotate(45deg);
+    }
+    .prompt-text {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: var(--text-dark);
+      white-space: pre-wrap;
+      font-weight: 500;
+    }
+    
+    /* 타임라인 세로선 효과 */
+    .prompt-list {
+      position: relative;
+    }
+    .prompt-list::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 21.5px; /* 45px 의 절반 근처 */
+      width: 2px;
+      background: var(--border-color);
+      z-index: 1;
+    }
+    
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--text-gray);
+      font-weight: 600;
+      margin-bottom: 2rem;
+      transition: color 0.2s;
+    }
+    .back-btn:hover {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="history-container">
+    <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> 메인 홈페이지로 돌아가기</a>
+    
+    <div class="history-header">
+      <i class="fa-solid fa-clock-rotate-left" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+      <h1>프로젝트 프롬프트 히스토리</h1>
+      <p style="color: var(--text-gray); font-size: 1.1rem;">본 웹사이트를 제작하기 위해 요청해주신 대화 기록입니다.</p>
+    </div>
+    
+    <div class="prompt-list">
+      <div class="prompt-item">
+        <div class="prompt-number">1</div>
+        <div class="prompt-content"><div class="prompt-text">기본 모던 사이트가 가장 유력하게 웹에 게시할 용도라 그걸 수정하는 방안으로 해야함</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">2</div>
+        <div class="prompt-content"><div class="prompt-text">일단 다시 열어줘</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">3</div>
+        <div class="prompt-content"><div class="prompt-text">사업분야 부분에 왜 위아래 열고닫고가 있는거야?</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">4</div>
+        <div class="prompt-content"><div class="prompt-text">ㅇㅇ</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">5</div>
+        <div class="prompt-content"><div class="prompt-text">이메일주소 wkyong@co-bien.co.kr 이 아닌 cobien@co-bien.co.kr 로 바꿔줘 전체적으로</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">6</div>
+        <div class="prompt-content"><div class="prompt-text">열어잇</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">7</div>
+        <div class="prompt-content"><div class="prompt-text">메인페이지에 쓸 영상도 만들어줄수있나?</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">8</div>
+        <div class="prompt-content"><div class="prompt-text">1.</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">9</div>
+        <div class="prompt-content"><div class="prompt-text">영상안보이는데?</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">10</div>
+        <div class="prompt-content"><div class="prompt-text">왜 it 가 아닌 이상한 동물이 돌아다니누</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">11</div>
+        <div class="prompt-content"><div class="prompt-text">열어</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">12</div>
+        <div class="prompt-content"><div class="prompt-text">그 저 입자에 우리가 하는 업무관련 텍스트 나타낫다 사라졌다 하게 해봐</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">13</div>
+        <div class="prompt-content"><div class="prompt-text">1. ASSET 컴플라이언스 솔루션을 제공하는 회사
+2. SI - 여신관련, 사후관리, 후처리, 담보(전문 SI업체라는 이미지)
+3. SM - 금융업무를 잘 이해하고, 경험많고, 고객이 인정하는 괜찮은 전문가들을 지원하는 회사
+4. 보안 - 금융보안(금융업무), 전문적인 솔루션, 유지보수
+
+동영상 텍스트에 이 내용이 들어가게끔?</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">14</div>
+        <div class="prompt-content"><div class="prompt-text">금융보안을 바탕으로 한 SI 및 SM 고도화, AI 기반 자산관리와 전문 컨설팅을 통해 미래 금융 시장을 선도하는 혁신 파트너가 되겠습니다. < 이 문장을 사이트에 잘 쓸수 있을까?</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">15</div>
+        <div class="prompt-content"><div class="prompt-text">안랩하고 lgcns 하고 위치바꿔</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">16</div>
+        <div class="prompt-content"><div class="prompt-text">프로젝트 및 제휴 문의
+이부분좀 선택지랑 깔끔하게 다듬기안되나?</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">17</div>
+        <div class="prompt-content"><div class="prompt-text">그러니까 저 선택칸이 너무 지저분하다니까</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">18</div>
+        <div class="prompt-content"><div class="prompt-text">열어</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">19</div>
+        <div class="prompt-content"><div class="prompt-text">나 이거 예전에 만들었던 크롤러 가운데창에 띄워줄래?</div></div>
+      </div>
+      <div class="prompt-item">
+        <div class="prompt-number">20</div>
+        <div class="prompt-content"><div class="prompt-text">내가 그동안 질문했던 프롬프트들 전체 모아서 페이지 한장으로 따로 만들어</div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

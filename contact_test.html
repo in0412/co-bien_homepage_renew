@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코비??CO-BIEN | 금융 SI & SM �?보안 ?�루???�문 기업</title>
+  <meta name="description" content="AhnLab Partner (�?코비?�입?�다. 금융 SI & SM 구축 �??�벽?�게 구현?�는 ?�드?�인??보안 ?�프???�비?��? ?�공?�니??">
+  
+  <!-- 구�? ?�트 (Noto Sans KR & Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- ?�트?�썸 ?�이�?-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- ?�랩 ?��????�용 ?��??�시??-->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ?�더 (?�랩 ?��??? 5?� 메뉴 개편 �??�시 ?�이??고정) -->
+  <header id="main-header" class="ahnlab-header">
+    <div class="container header-container">
+      <a href="#" class="logo-link">
+        <img src="assets/logo-y.png" alt="CO-BIEN 코비?? class="brand-logo">
+      </a>
+      <nav class="nav-links">
+        <div class="nav-item-dropdown">
+          <a href="index.html#about" class="nav-item">?�사?�개 <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#vision">기업비전</a></li>
+            <li><a href="#philosophy">기업?�념</a></li>
+            <li><a href="#history">주요?�혁</a></li>
+            <li><a href="#ceo">?�?�님 말�?</a></li>
+          </ul>
+        </div>
+        <div class="nav-item-dropdown">
+          <a href="index.html#business" class="nav-item">?�업분야 <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#biz-si">금융 SI</a></li>
+            <li><a href="#biz-sm">금융 SM</a></li>
+            <li><a href="#biz-security">?�드?�인??보안</a></li>
+            <li><a href="#biz-network">?�트?�크/방화�?/a></li>
+          </ul>
+        </div>
+        <a href="index.html#projects" class="nav-item">주요?�적</a>
+        <a href="index.html#partners" class="nav-item">?�력?�소�?/a>
+        <a href="#" class="nav-item" id="crawler-open-btn" style="color: var(--primary); font-weight: 700;"><i class="fa-solid fa-spider" style="margin-right: 5px;"></i>?�이???�집�?/a>
+        <a href="#contact" class="nav-item contact-btn" target="_blank">Contact Us</a>
+      </nav>
+      <button class="mobile-menu-toggle" id="menu-toggle" aria-label="메뉴 ?�기">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 모바??메뉴 -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html#about" class="mobile-nav-item">?�사?�개</a>
+    <a href="index.html#business" class="mobile-nav-item">?�업분야</a>
+    <a href="index.html#projects" class="mobile-nav-item">주요?�적</a>
+    <a href="index.html#partners" class="mobile-nav-item">?�력?�소�?/a>
+    <a href="#" class="mobile-nav-item" id="mobile-crawler-open-btn" style="color: var(--primary);"><i class="fa-solid fa-spider"></i> ?�이???�집�?(Crawler)</a>
+    <a href="#contact" class="mobile-nav-item mobile-contact-btn" target="_blank">Contact Us</a>
+  </div>
+
+  <section id="contact" class="section">
+    <div class="container-fluid" style="padding: 0 4vw; max-width: 100%;">
+      <div class="split-section-layout">
+        
+        <div class="split-section-intro">
+          <div class="section-header">
+            <span class="section-tag">CONTACT US</span>
+            <h2 class="section-title">문의 �??�시??�?/h2>
+            <p class="section-subtitle">코비??본사 주소 ?�인�??�라??비즈?�스 문의�?�??�션?�서 ?�리?�게 ?�용?�실 ???�습?�다.</p>
+          </div>
+          <img src="assets/left_contact.png" alt="?�시??�?비주?? style="width:100%; border-radius:12px; margin-top:2rem; box-shadow:var(--shadow-md); object-fit:cover;">
+        </div>
+
+        <div class="split-section-content">
+          <img src="assets/contact_office.png" alt="코비??본사 ?�경" style="width:100%; height:350px; object-fit:cover; border-radius:12px; margin-bottom: 3rem; box-shadow:var(--shadow-md);">
+          <!-- 지?��? 문의 ?�이 결합??복합 ?�???�이?�웃 -> ?�하 ?�직 배치�?변�?-->
+          <div class="contact-stacked-layout" style="display: flex; flex-direction: column; gap: 4rem;">
+        
+        <!-- ?�시??�?�?본사 ?�보 -->
+        <div class="contact-info-block" style="width: 100%; border: 1px solid var(--border-color); background: var(--bg-white); border-radius: 12px; padding: 3rem; box-shadow: var(--shadow-sm);">
+          <div class="info-head" style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.5rem; color: var(--text-dark); margin-bottom: 0.5rem;"><i class="fa-solid fa-building" style="color: var(--primary); margin-right: 0.5rem;"></i> 코비??본사 ?�내</h3>
+            <p style="color: var(--text-gray);">?�제??방문?�시거나 ?�락 주시�??�성�??�내???�리겠습?�다.</p>
+          </div>
+          <!-- 지?��? 주소�?가로로 ?��???배치?�여 ?�직?�게 -->
+          <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 3rem; align-items: stretch;">
+            <div class="loc-map-container" style="height: 350px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8353211275803!2d126.85937631580153!3d37.55894348231966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c06b7cd999b%3A0xe71337c8fc915479!2z7ZWc7ZmU67mE7KaI66mU7Yq466GcMuywqA!5e0!3m2!1sko!2skr!4v1535158438322" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="address-details" style="display: flex; flex-direction: column; justify-content: center; gap: 1.5rem;">
+              <div>
+                <p style="font-size: 0.9rem; color: var(--primary); font-weight: 700; margin-bottom: 0.5rem;">HEADQUARTERS</p>
+                <p class="full-address" style="font-size: 1.15rem; font-weight: 600; color: var(--text-dark); line-height: 1.6;">?�울?�별??강서�??�천�?551-24<br>(?�화비즈메트�?2�?604??</p>
+              </div>
+              <div style="height: 1px; background: var(--border-color); width: 100%;"></div>
+              <div class="contact-quick" style="display: flex; flex-direction: column; gap: 1rem;">
+                <p style="display: flex; justify-content: space-between; font-size: 1.05rem;"><span style="color: var(--text-muted);">?�?�전??/span> <strong>02) 786-8688</strong></p>
+                <p style="display: flex; justify-content: space-between; font-size: 1.05rem;"><span style="color: var(--text-muted);">?�스번호</span> <strong>02) 786-8789</strong></p>
+                <p style="display: flex; justify-content: space-between; font-size: 1.05rem;"><span style="color: var(--text-muted);">?�?�메??/span> <strong>cobien@co-bien.co.kr</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ?�라??비즈?�스 문의 ??(?�양???�통 카테고리 추�?) -->
+        <div class="contact-form-block" style="width: 100%; border: 1px solid var(--border-color); background: var(--bg-light); border-radius: 12px; padding: 4rem; box-shadow: var(--shadow-sm);">
+          <div class="form-head" style="text-align: center; margin-bottom: 3rem;">
+            <h3 style="font-size: 2rem; color: var(--text-dark); margin-bottom: 1rem; justify-content: center;"><i class="fa-solid fa-envelope-open-text" style="color: var(--primary);"></i> ?�로?�트 �??�휴 문의</h3>
+            <p style="font-size: 1.1rem; color: var(--text-gray);">코비?�의 ?�문 ?�루???�입부???�휴 ?�트?�십까�?, ?�하?�는 목적???�택?�여 ?�하�?문의??주세??</p>
+          </div>
+          
+          <form class="contact-form-ahn" id="business-contact-form" style="max-width: 900px; margin: 0 auto; background: var(--bg-white); padding: 3rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid var(--border-color);">
+            
+            <!-- 문의 ?�형 ?�택 (SCK Corp 참고) -->
+            <div class="form-group" style="margin-bottom: 2.5rem;">
+              <label style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; display: block;">?�떤 분야???�??문의?�고 ?�으?��??? <span class="req" style="color: #d9534f;">*</span></label>
+              <div class="select-wrapper" style="position: relative;">
+                <select id="inquiry_type" name="inquiry_type" required style="width: 100%; padding: 1.2rem; font-size: 1.05rem; border-radius: 8px; border: 1px solid var(--border-color); appearance: none; background: url('data:image/svg+xml;utf8,<svg fill=%22%23888888%22 height=%2224%22 viewBox=%220 0 24 24%22 width=%2224%22 xmlns=%22http://www.w3.org/2000/svg%22><path d=%22M7 10l5 5 5-5z%22/></svg>') no-repeat right 1rem center; background-color: var(--bg-white); cursor: pointer; color: var(--text-dark); transition: all 0.2s;">
+                  <option value="" disabled selected>?�하?�는 문의 분야�??�택??주세??/option>
+                  <option value="asset">ASSET 컴플?�이?�스 ?�루???�입</option>
+                  <option value="si">?�신·?�후관�??�문 SI 구축</option>
+                  <option value="sm">금융 SM ?�문가 지??�??�견</option>
+                  <option value="security">금융 보안 ?�루??구축 �??��?보수</option>
+                  <option value="partner">기�? ?�휴 ?�트?�십 �??�로?�트 문의</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- CSS for contact layout -->
+            <style>
+              .select-wrapper select:focus {
+                outline: none;
+                border-color: var(--primary) !important;
+                box-shadow: 0 0 0 3px var(--primary-light);
+              }
+              @media (max-width: 900px) {
+                .contact-info-block > div {
+                  grid-template-columns: 1fr !important;
+                }
+              }
+            </style>
+
+            <div class="form-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+              <div class="form-group">
+                <label for="comp_name">?�속 / ?�사�?<span class="req" style="color: #d9534f;">*</span></label>
+                <input type="text" id="comp_name" name="comp_name" placeholder="?? (�?코비?? required style="padding: 1rem; font-size: 1rem; border-radius: 6px;">
+              </div>
+              <div class="form-group">
+                <label for="sender_name">?�당?�명 <span class="req" style="color: #d9534f;">*</span></label>
+                <input type="text" id="sender_name" name="sender_name" placeholder="?�당???�함" required style="padding: 1rem; font-size: 1rem; border-radius: 6px;">
+              </div>
+              <div class="form-group">
+                <label for="sender_email">?�무 ?�메??<span class="req" style="color: #d9534f;">*</span></label>
+                <input type="email" id="sender_email" name="sender_email" placeholder="example@domain.com" required style="padding: 1rem; font-size: 1rem; border-radius: 6px;">
+              </div>
+              <div class="form-group">
+                <label for="sender_phone">?�락�?<span class="req" style="color: #d9534f;">*</span></label>
+                <input type="tel" id="sender_phone" name="sender_phone" placeholder="?? 010-1234-5678" required style="padding: 1rem; font-size: 1rem; border-radius: 6px;">
+              </div>
+            </div>
+            
+            <div class="form-group msg-group" style="margin-top: 2rem;">
+              <label for="message">문의 ?�세 ?�용 <span class="req" style="color: #d9534f;">*</span></label>
+              <textarea id="message" name="message" rows="6" placeholder="?�입?�시?�는 ?�스??규모, ?�로?�트 ?�정, ?�산 ??구체?�인 ?�구?�항???�성??주시�??�욱 ?�속?�고 ?�확???�내가 가?�합?�다." required style="padding: 1rem; font-size: 1rem; border-radius: 6px; resize: vertical;"></textarea>
+            </div>
+            
+            <div class="form-agree" style="margin-top: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <input type="checkbox" id="privacy_agree" required style="width: 18px; height: 18px; cursor: pointer;">
+              <label for="privacy_agree" style="font-size: 0.95rem; color: var(--text-gray); cursor: pointer; font-weight: 500;">개인?�보 ?�집 �??�용???�의?�니??</label>
+            </div>
+
+            <div class="form-submit" style="text-align: center; margin-top: 2.5rem;">
+              <button type="submit" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.15rem; border-radius: 30px; min-width: 250px;">문의 ?�수?�기</button>
+            </div>
+          </form>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ?�터 (변경된 5?� 메뉴 반영) -->
+  <footer id="main-footer" class="ahnlab-footer">
+    <div class="container footer-container-ahn">
+      <div class="footer-top">
+        <img src="assets/logo-y.png" alt="CO-BIEN 코비?? class="footer-logo">
+        <div class="footer-links">
+          <a href="index.html#about">?�사?�개</a>
+          <a href="index.html#business">?�업분야</a>
+          <a href="index.html#projects">주요?�적</a>
+          <a href="index.html#partners">?�력?�소�?/a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-info-text">
+          <p><strong>(�?코비??/strong> | ?�?�자: 김?�숙 | ?�업?�등록번?? 107-88-16062 | 개인?�보보호책임?? 강인</p>
+          <p>주소: ?�울?�별??강서�??�천�?551-24 (?�화비즈메트�?2�?604?? | TEL: 02-786-8688 | FAX: 02-786-8789</p>
+          <p>?�메?? cobien@co-bien.co.kr</p>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 (�?코비?? All Rights Reserved. Designed by Antigravity AI.</p>
+        <div class="footer-legal">
+          <a href="#" class="privacy">개인?�보처리방침</a>
+          <a href="#">?�용?��?</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ?�롤???�이???�인??모달 (Middle Window) -->
+  <div id="crawler-modal" class="crawler-modal-overlay">
+    <div class="crawler-modal-content">
+      <div class="crawler-modal-header">
+        <h3 style="margin: 0; color: #fff; font-size: 1.2rem; display: flex; align-items: center;"><i class="fa-solid fa-terminal" style="margin-right: 0.5rem; color: #00ff00;"></i> 코비???�이???�롤??(Crawler Engine)</h3>
+        <button id="crawler-close-btn" style="background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="crawler-modal-body">
+        <div id="crawler-terminal" class="terminal-window">
+          <p class="term-text">> [SYSTEM] ?�롤???�진???�작?�니??..</p>
+          <p class="term-text">> [SYSTEM] 'crawled_data.json' ?�이?��? 로드?�는 �?..</p>
+          <!-- ?�이?��? ?�기??출력??-->
+          <pre id="crawler-data-output" style="display: none;"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
